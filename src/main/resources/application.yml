@@ -1,0 +1,14 @@
+micronaut:
+  application:
+    name: demo
+  metrics:
+    enabled: true
+    export:
+      appoptics:
+        enabled: true
+        apiToken: ${APPOPTICS_API_TOKEN}
+        step: PT1M
+netty:
+  default:
+    allocator:
+      max-order: 3
